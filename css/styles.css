@@ -1,0 +1,27 @@
+/* Phone and narrow viewport first */
+
+.container {
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tablet-sized space becomes available */
+
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+    }
+}
+
+/* Laptop-sized space becomes available */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
